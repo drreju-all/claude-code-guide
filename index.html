@@ -1526,7 +1526,7 @@
     <div class="section-header">
       <span class="section-icon">🔍</span>
       <span class="section-title">자주 겪는 문제 해결</span>
-      <span class="section-count">15개</span>
+      <span class="section-count">16개</span>
     </div>
     <div class="faq-list">
       <div class="faq-item" data-desc="대화 길어짐 기억 잊어버림 컨텍스트 한계 이전 내용">
@@ -1677,6 +1677,24 @@ node_modules/
 dist/
 *.log</code><br>
           이 파일에 등록된 항목은 Claude가 읽거나 수정하지 않습니다.
+        </div>
+      </div>
+      <div class="faq-item" data-desc="gitignore 파일 만들기 필요성 보안 env node_modules 제외">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <span>.gitignore 파일은 뭐고 언제 만드나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <strong>Git에 올리면 안 되는 파일을 자동으로 제외</strong>해주는 설정 파일입니다. 없으면 비밀번호·API 키가 GitHub에 공개되거나, 거대한 라이브러리 폴더가 저장소에 통째로 올라갈 수 있습니다.<br><br>
+          <strong>언제 만드나요?</strong><br>
+          프로젝트를 시작하자마자, <em>첫 커밋 전에</em> 만드는 것이 원칙입니다. Claude에게 "이 프로젝트에 맞는 .gitignore 만들어줘"라고 하면 바로 생성해줍니다.<br><br>
+          <strong>일반적인 .gitignore 예시:</strong>
+          <code style="display:block;background:var(--bg-elevated);padding:10px;border-radius:6px;white-space:pre-wrap;font-size:12px;line-height:1.6;">.env            ← 비밀번호·API 키
+node_modules/   ← 설치된 라이브러리 (용량 크고 재설치 가능)
+.DS_Store       ← Mac 시스템 파일
+dist/           ← 빌드 결과물 (소스에서 생성 가능)
+*.log           ← 로그 파일</code><br>
+          이 목록에 있는 파일은 <code>git add</code>나 <code>git commit</code>을 해도 Git이 자동으로 무시합니다.
         </div>
       </div>
       <div class="faq-item" data-desc="비용 구조 과금 요금제 구독 API 토큰 가격 얼마">
