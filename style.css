@@ -359,8 +359,12 @@
 
   /* ---- SEARCH ---- */
   .search-wrap {
-    position: relative;
-    margin-bottom: 48px;
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+    background: var(--bg-main);
+    padding: 12px 0;
+    margin-bottom: 36px;
   }
 
   .search-icon {
