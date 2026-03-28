@@ -49,6 +49,7 @@ claude-code-guide/
 | 명령어 | `#s9` | 승인 & 권한 관리 |
 | 명령어 | `#s10` | 외부 서비스 연동 |
 | 심화 | `#skills-agents` | 스킬 & 에이전트 운영 |
+| 심화 | `#agent-team` | 에이전트 팀 구성 & 운영 |
 | 심화 | `#s11` | 초보자 팁 |
 | 심화 | `#troubleshoot` | 트러블슈팅 FAQ |
 | 참고 | `#resources` | 스킬·플러그인 리소스 |
@@ -59,7 +60,7 @@ claude-code-guide/
 
 ## 파일 사이즈 한도
 
-CSS와 JS는 외부 파일(`style.css`, `script.js`)로 분리되어 있다. `index.html`은 HTML만 포함하며 **1,800줄**을 초과하지 않는다.
+CSS와 JS는 외부 파일(`style.css`, `script.js`)로 분리되어 있다. `index.html`은 HTML만 포함하며 **2,000줄**을 초과하지 않는다.
 
 ### 명령어 카드 구조
 ```html
