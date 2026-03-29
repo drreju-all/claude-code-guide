@@ -178,8 +178,10 @@
   sections.forEach(s => observer.observe(s));
 
   // ---- CURRICULUM PAGE ----
+  const _pageHideEls = () => ['.main', '.hero', '.footer'].map(s => document.querySelector(s)).filter(Boolean);
+
   function showPage(pageId) {
-    document.querySelector('.main').style.display = 'none';
+    _pageHideEls().forEach(el => el.style.display = 'none');
     document.querySelector('.search-wrap').style.display = 'none';
     const page = document.getElementById(pageId + '-page');
     if (!page.innerHTML.trim()) buildCurriculum();
@@ -189,7 +191,7 @@
 
   function hidePage() {
     document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-    document.querySelector('.main').style.display = '';
+    _pageHideEls().forEach(el => el.style.display = '');
     document.querySelector('.search-wrap').style.display = '';
   }
 
