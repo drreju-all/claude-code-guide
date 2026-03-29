@@ -71,6 +71,7 @@
         </div>
       </div>
     </div>
+    <button class="nav-curriculum-btn" onclick="showPage('curriculum')">🎓 교육 커리큘럼</button>
     <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="메뉴 열기">☰</button>
   </div>
 </nav>
@@ -106,6 +107,7 @@
   <a class="nav-link" href="#resources" onclick="closeMobileMenu()">🔗 리소스 모음</a>
   <a class="nav-link" href="#cheatsheet" onclick="closeMobileMenu()">📋 치트시트</a>
   <a class="nav-link" href="#glossary" onclick="closeMobileMenu()">📚 용어사전</a>
+  <a class="nav-link" href="#" onclick="closeMobileMenu();showPage('curriculum');return false;">🎓 교육 커리큘럼</a>
 </div>
 
 <!-- HERO -->
@@ -1992,6 +1994,7 @@ dist/           ← 빌드 결과물 (소스에서 생성 가능)
 <!-- COPY TOAST -->
 <div class="copied-flash" id="copiedFlash">복사됨!</div>
 
+<div id="curriculum-page" class="page-view"></div>
 <script src="script.js"></script>
 </body>
 </html>

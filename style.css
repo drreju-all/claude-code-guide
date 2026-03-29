@@ -1159,6 +1159,62 @@
     font-size: 12px;
   }
 
+  /* ---- CURRICULUM PAGE ---- */
+  .nav-curriculum-btn {
+    background: var(--accent-primary);
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+  }
+  .nav-curriculum-btn:hover { opacity: 0.82; }
+  .page-view { display: none; }
+  .page-view.active {
+    display: block;
+    max-width: 860px;
+    margin: 96px auto 80px;
+    padding: 0 24px;
+  }
+  .curriculum-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 28px;
+    background: none;
+    border: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0;
+  }
+  .curriculum-back:hover { color: var(--text-primary); }
+  .curriculum-week {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  .curriculum-week-title { font-size: 17px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+  .curriculum-week-sub { font-size: 13px; color: var(--accent-secondary); margin-bottom: 16px; }
+  .curriculum-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .curriculum-table th { text-align: left; color: var(--text-muted); font-weight: 600; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+  .curriculum-table td { padding: 8px 10px; color: var(--text-secondary); border-bottom: 1px solid rgba(42,45,62,0.5); vertical-align: top; line-height: 1.5; }
+  .curriculum-table tr:last-child td { border-bottom: none; }
+  .curriculum-table td:first-child { color: var(--accent-primary); font-weight: 600; white-space: nowrap; }
+  .cbadge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; background: var(--bg-elevated); color: var(--text-muted); }
+  .cbadge.lab { background: rgba(78,205,196,0.12); color: var(--accent-secondary); }
+  .cbadge.lec { background: rgba(124,106,247,0.12); color: var(--accent-primary); }
+  .cbadge.disc { background: rgba(247,183,49,0.12); color: var(--accent-warm); }
+  .curriculum-hw { margin-top: 14px; padding: 10px 14px; background: var(--bg-elevated); border-radius: 8px; font-size: 13px; color: var(--text-secondary); border-left: 3px solid var(--accent-warm); }
+
   /* ---- FLOW MAP ---- */
   .flow-map {
     display: flex;
