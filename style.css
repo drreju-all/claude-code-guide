@@ -1211,6 +1211,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 16px;
+    margin-bottom: 36px;
   }
   .flow-size {
     font-size: 12px;
